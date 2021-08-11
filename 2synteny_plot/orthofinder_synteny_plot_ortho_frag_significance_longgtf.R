@@ -66,18 +66,18 @@ options(error=traceback)
 parser <- OptionParser(usage = "%prog -i orthologs.txt -o out [options]",option_list=option_list)
 opt = parse_args(parser)
 
-setwd("F:\\Snail")
-opt$input_filename="F:/Snail/longest_protO/Orthofinder/Results_May27/Orthologues/Orthologues_Biomphalaria_straminea/ortholog.Biomphalaria_straminea__v__Octopus_sinensis.tsv.txt"
-opt$fai_ref="fai/Biomphalaria_straminea.fa.fai"
-opt$fai_query="fai/Octopus_sinensis.fa.fai"
-opt$gff3_ref="f_gtf/formatted.Biomphalaria_straminea.longest-gene.gtf"
-opt$gff3_query="f_gtf/formatted.Octopus_sinensis.longest-gene.gtf"
-opt$name_ref="Biomphalaria_straminea"
-opt$name_qry="Octopus_sinensis"
-opt$plot_size=15
-opt$break_size=50
-opt$min_ortho_x=5
-opt$window=50
+#setwd("F:\\Snail")
+#opt$input_filename="F:/Snail/longest_protO/Orthofinder/Results_May27/Orthologues/Orthologues_Biomphalaria_straminea/ortholog.Biomphalaria_straminea__v__Octopus_sinensis.tsv.txt"
+#opt$fai_ref="fai/Biomphalaria_straminea.fa.fai"
+#opt$fai_query="fai/Octopus_sinensis.fa.fai"
+#opt$gff3_ref="f_gtf/formatted.Biomphalaria_straminea.longest-gene.gtf"
+#opt$gff3_query="f_gtf/formatted.Octopus_sinensis.longest-gene.gtf"
+#opt$name_ref="Biomphalaria_straminea"
+#opt$name_qry="Octopus_sinensis"
+#opt$plot_size=15
+#opt$break_size=50
+#opt$min_ortho_x=5
+#opt$window=50
 #opt$output_filename="test"
 
 
@@ -101,6 +101,9 @@ cat(paste0("show-verticle-lines (-y): ", opt$v_lines,"\n"))
 
 ##Ortholog file formatting
 orthologs<-read.table(opt$input_filename, stringsAsFactors = F, header = TRUE)
+cat(paste0("n ortholog before filtering: ", nrow(orthologs),"\n"))
+
+
 #names(orthologs)[3]="score"
 #orthologs<-separate(orthologs, "V1", c("x.sp", "x.gene"),
 #                    sep = "\\|", remove = TRUE, convert = TRUE)
@@ -182,7 +185,6 @@ for (i in 2:nrow(fai_ref)) {
   fai_ref$x.chrend[i]<-fai_ref$x.length[i]+fai_ref$x.chrend[i-1]
 }
 max.x<-max(fai_ref$x.chrend)
-max.x
 
 fai_query<-read.table(opt$fai_query, stringsAsFactors = F)
 fai_query<-fai_query[,c(1,2)]
@@ -232,7 +234,10 @@ for (i in 2:nrow(fai_query)) {
   fai_query$y.chrend[i]<-fai_query$y.length[i]+fai_query$y.chrstart[i]
 }
 max.y<-max(fai_query$y.chrend)
-max.y
+
+cat(paste0("x length sum: ", max.x,"\n"))
+cat(paste0("y length sum: ", max.y,"\n"))
+
 ##Chr/scaffold relengthed
 
 ####Significance test
@@ -315,6 +320,37 @@ for (i in 1:nrow(fai_query)) {
   }
 }
 
+##x and y tick mark
+if (ceiling(max(fai_ref$x.chrend))>=250*10^6){
+  breakseqx<-seq(0,
+                 ceiling(max(fai_ref$x.chrend)/10^6),
+                 ceiling(max(fai_ref$x.chrend)/(10^6*8*opt$break_size))*opt$break_size)
+} else if (ceiling(max(fai_ref$x.chrend))>=100*10^6) {
+  breakseqx<-seq(0,
+                 ceiling(max(fai_ref$x.chrend)/10^6),
+                 25)
+} else {
+  breakseqx<-seq(0,
+                 ceiling(max(fai_ref$x.chrend)/10^6),
+                 10)
+}
+
+if (ceiling(max(fai_query$y.chrend))>=250*10^6) {
+  breakseqy<-seq(0,
+                 ceiling(max(fai_query$y.chrend)/10^6),
+                 ceiling(max(fai_query$y.chrend)/(10^6*8*opt$break_size))*opt$break_size)
+} else if (ceiling(max(fai_query$y.chrend))>=100*10^6) {
+  breakseqy<-seq(0,
+                 ceiling(max(fai_query$y.chrend)/10^6),
+                 25)
+} else {
+  breakseqy<-seq(0,
+                 ceiling(max(fai_query$y.chrend)/10^6),
+                 10)
+}
+
+cat(paste0("n ortholog after filtering: ", nrow(orthologs.filtered),"\n"))
+##plot
 p<-ggplot()+
   geom_point(data = subset(orthologs.filtered, pvalue.adjust < 0.05),
              aes(x=x.pos.new/10^6,
@@ -326,15 +362,11 @@ p<-ggplot()+
   scale_x_continuous(breaks = fai_ref$x.chrend/10^6,
                      labels = fai_ref$x.chr1,
                      sec.axis = sec_axis(~., name = "Mb",
-                                         breaks = seq(0,
-                                                      ceiling(max(fai_ref$x.chrend)/10^6),
-                                                      ceiling(max(fai_ref$x.chrend)/(10^6*8*50))*50)))+
+                                         breaks = breakseqx))+
   scale_y_continuous(breaks = fai_query$y.chrend/10^6,
                      labels = fai_query$y.chr1,
                      sec.axis = sec_axis(~., name = "Mb",
-                                         breaks = seq(0,
-                                                      ceiling(max(fai_query$y.chrend)/10^6),
-                                                      ceiling(max(fai_query$y.chrend)/(10^6*8*opt$break_size))*opt$break_size)))+
+                                         breaks = breakseqy))+
   labs(title = paste0("n=", nrow(orthologs.filtered), " orthologues"),
        x = gsub("_"," ",opt$name_ref),
        y = gsub("_"," ",opt$name_qry))+
