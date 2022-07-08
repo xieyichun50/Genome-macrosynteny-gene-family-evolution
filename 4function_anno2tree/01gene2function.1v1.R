@@ -4,6 +4,7 @@
 ##species.KOG.1v1.txt
 ##species.KEGG.1v1.txt
 ##species.GO.1v1.txt
+##species.ko.1v1.txt
 
 #!/usr/bin/env Rscript
 suppressPackageStartupMessages(library(tidyr))
@@ -70,6 +71,45 @@ write.table(GenesKEGGpair.1v1,
             sep = '\t', row.names = FALSE,
             quote = FALSE)
 rm(pairtable, pairtable.new, rcnames, subtable, pathways)
+
+##KO
+pathways<-eggnog[,c("Genes","KEGG_ko")]
+{
+names(pathways)[1]="Genes"
+  names(pathways)[2]="ko"
+  pathways<-subset(pathways, ko != "-" & ko != "" & is.na(ko)==FALSE,
+                   select = c("Genes", "ko"))
+  pathways<-unique(pathways)
+  #Format GenesKEGGpair
+  Geneskopair.1v1<-matrix(NA, nrow = 1, ncol = 2)
+  Geneskopair.1v1<-as.data.frame(Geneskopair.1v1)
+  names(Geneskopair.1v1)[1]="Genes"
+  names(Geneskopair.1v1)[2]="ko"
+  
+  for (i in 1:nrow(pathways)) {
+    subtable<-pathways[i,]
+    rcnames<-list(c(strsplit(subtable$Genes[1], ',')[[1]]),c(strsplit(subtable$ko[1], ',')[[1]]))
+    pairtable<-matrix(data = NA, nrow = length(rcnames[[1]]), ncol = length(rcnames[[2]]), dimnames = rcnames)
+    pairtable<-as.data.frame(pairtable)
+    pairtable$Genes<-rownames(pairtable)
+    rownames(pairtable)<-1:nrow(pairtable)
+    pairtable<-as.data.frame(pairtable)
+    pairtable.new<-pairtable %>% gather(ko, pair, c(1:ncol(pairtable)-1))
+    pairtable.new<-pairtable.new[,c(1:2)]
+    Geneskopair.1v1<-rbind(Geneskopair.1v1, pairtable.new)
+  }
+  Geneskopair.1v1<-subset(Geneskopair.1v1, 
+                            is.na(Geneskopair.1v1$Genes)==FALSE, 
+                            select = c("ko", "Genes"))
+  Geneskopair.1v1$ko<-gsub("ko:","",Geneskopair.1v1$ko)
+  Geneskopair.1v1<-unique(Geneskopair.1v1)
+  
+  write.table(Geneskopair.1v1, 
+              file = paste(opt$output_filename,".ko.1v1.txt", sep = ""),
+              sep = '\t', row.names = FALSE,
+              quote = FALSE)
+  rm(pairtable, pairtable.new, rcnames, subtable, pathways)
+}
 
 #KOG
 pathways<-eggnog[,c("Genes","COG_category")]
