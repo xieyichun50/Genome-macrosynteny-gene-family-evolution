@@ -1,0 +1,535 @@
+A	C	ONTOLOGY
+ko09100	ko00010	Metabolism
+ko09100	ko00020	Metabolism
+ko09100	ko00030	Metabolism
+ko09100	ko00040	Metabolism
+ko09100	ko00051	Metabolism
+ko09100	ko00052	Metabolism
+ko09100	ko00053	Metabolism
+ko09100	ko00500	Metabolism
+ko09100	ko00520	Metabolism
+ko09100	ko00620	Metabolism
+ko09100	ko00630	Metabolism
+ko09100	ko00640	Metabolism
+ko09100	ko00650	Metabolism
+ko09100	ko00660	Metabolism
+ko09100	ko00562	Metabolism
+ko09100	ko00190	Metabolism
+ko09100	ko00195	Metabolism
+ko09100	ko00196	Metabolism
+ko09100	ko00710	Metabolism
+ko09100	ko00720	Metabolism
+ko09100	ko00680	Metabolism
+ko09100	ko00910	Metabolism
+ko09100	ko00920	Metabolism
+ko09100	ko00061	Metabolism
+ko09100	ko00062	Metabolism
+ko09100	ko00071	Metabolism
+ko09100	ko00072	Metabolism
+ko09100	ko00073	Metabolism
+ko09100	ko00100	Metabolism
+ko09100	ko00120	Metabolism
+ko09100	ko00121	Metabolism
+ko09100	ko00140	Metabolism
+ko09100	ko00561	Metabolism
+ko09100	ko00564	Metabolism
+ko09100	ko00565	Metabolism
+ko09100	ko00600	Metabolism
+ko09100	ko00590	Metabolism
+ko09100	ko00591	Metabolism
+ko09100	ko00592	Metabolism
+ko09100	ko01040	Metabolism
+ko09100	ko00230	Metabolism
+ko09100	ko00240	Metabolism
+ko09100	ko00250	Metabolism
+ko09100	ko00260	Metabolism
+ko09100	ko00270	Metabolism
+ko09100	ko00280	Metabolism
+ko09100	ko00290	Metabolism
+ko09100	ko00300	Metabolism
+ko09100	ko00310	Metabolism
+ko09100	ko00220	Metabolism
+ko09100	ko00330	Metabolism
+ko09100	ko00340	Metabolism
+ko09100	ko00350	Metabolism
+ko09100	ko00360	Metabolism
+ko09100	ko00380	Metabolism
+ko09100	ko00400	Metabolism
+ko09100	ko00410	Metabolism
+ko09100	ko00430	Metabolism
+ko09100	ko00440	Metabolism
+ko09100	ko00450	Metabolism
+ko09100	ko00460	Metabolism
+ko09100	ko00471	Metabolism
+ko09100	ko00472	Metabolism
+ko09100	ko00473	Metabolism
+ko09100	ko00480	Metabolism
+ko09100	ko00510	Metabolism
+ko09100	ko00513	Metabolism
+ko09100	ko00512	Metabolism
+ko09100	ko00515	Metabolism
+ko09100	ko00514	Metabolism
+ko09100	ko00532	Metabolism
+ko09100	ko00534	Metabolism
+ko09100	ko00533	Metabolism
+ko09100	ko00531	Metabolism
+ko09100	ko00563	Metabolism
+ko09100	ko00601	Metabolism
+ko09100	ko00603	Metabolism
+ko09100	ko00604	Metabolism
+ko09100	ko00540	Metabolism
+ko09100	ko00542	Metabolism
+ko09100	ko00541	Metabolism
+ko09100	ko00550	Metabolism
+ko09100	ko00511	Metabolism
+ko09100	ko00571	Metabolism
+ko09100	ko00572	Metabolism
+ko09100	ko00730	Metabolism
+ko09100	ko00740	Metabolism
+ko09100	ko00750	Metabolism
+ko09100	ko00760	Metabolism
+ko09100	ko00770	Metabolism
+ko09100	ko00780	Metabolism
+ko09100	ko00785	Metabolism
+ko09100	ko00790	Metabolism
+ko09100	ko00670	Metabolism
+ko09100	ko00830	Metabolism
+ko09100	ko00860	Metabolism
+ko09100	ko00130	Metabolism
+ko09100	ko00900	Metabolism
+ko09100	ko00902	Metabolism
+ko09100	ko00909	Metabolism
+ko09100	ko00904	Metabolism
+ko09100	ko00906	Metabolism
+ko09100	ko00905	Metabolism
+ko09100	ko00981	Metabolism
+ko09100	ko00908	Metabolism
+ko09100	ko00903	Metabolism
+ko09100	ko00281	Metabolism
+ko09100	ko01052	Metabolism
+ko09100	ko00522	Metabolism
+ko09100	ko01051	Metabolism
+ko09100	ko01059	Metabolism
+ko09100	ko01056	Metabolism
+ko09100	ko01057	Metabolism
+ko09100	ko00253	Metabolism
+ko09100	ko00523	Metabolism
+ko09100	ko01054	Metabolism
+ko09100	ko01053	Metabolism
+ko09100	ko01055	Metabolism
+ko09100	ko00940	Metabolism
+ko09100	ko00945	Metabolism
+ko09100	ko00941	Metabolism
+ko09100	ko00944	Metabolism
+ko09100	ko00942	Metabolism
+ko09100	ko00943	Metabolism
+ko09100	ko00901	Metabolism
+ko09100	ko00403	Metabolism
+ko09100	ko00950	Metabolism
+ko09100	ko00960	Metabolism
+ko09100	ko01058	Metabolism
+ko09100	ko00232	Metabolism
+ko09100	ko00965	Metabolism
+ko09100	ko00966	Metabolism
+ko09100	ko00402	Metabolism
+ko09100	ko00311	Metabolism
+ko09100	ko00332	Metabolism
+ko09100	ko00261	Metabolism
+ko09100	ko00331	Metabolism
+ko09100	ko00521	Metabolism
+ko09100	ko00524	Metabolism
+ko09100	ko00525	Metabolism
+ko09100	ko00401	Metabolism
+ko09100	ko00404	Metabolism
+ko09100	ko00405	Metabolism
+ko09100	ko00333	Metabolism
+ko09100	ko00254	Metabolism
+ko09100	ko00999	Metabolism
+ko09100	ko00998	Metabolism
+ko09100	ko00997	Metabolism
+ko09100	ko00362	Metabolism
+ko09100	ko00627	Metabolism
+ko09100	ko00364	Metabolism
+ko09100	ko00625	Metabolism
+ko09100	ko00361	Metabolism
+ko09100	ko00623	Metabolism
+ko09100	ko00622	Metabolism
+ko09100	ko00633	Metabolism
+ko09100	ko00642	Metabolism
+ko09100	ko00643	Metabolism
+ko09100	ko00791	Metabolism
+ko09100	ko00930	Metabolism
+ko09100	ko00363	Metabolism
+ko09100	ko00621	Metabolism
+ko09100	ko00626	Metabolism
+ko09100	ko00624	Metabolism
+ko09100	ko00365	Metabolism
+ko09100	ko00984	Metabolism
+ko09100	ko00980	Metabolism
+ko09100	ko00982	Metabolism
+ko09100	ko00983	Metabolism
+ko09100	ko09113	Metabolism
+ko09120	ko03020	Genetic Information Processing
+ko09120	ko03022	Genetic Information Processing
+ko09120	ko03040	Genetic Information Processing
+ko09120	ko03010	Genetic Information Processing
+ko09120	ko00970	Genetic Information Processing
+ko09120	ko03013	Genetic Information Processing
+ko09120	ko03015	Genetic Information Processing
+ko09120	ko03008	Genetic Information Processing
+ko09120	ko03060	Genetic Information Processing
+ko09120	ko04141	Genetic Information Processing
+ko09120	ko04130	Genetic Information Processing
+ko09120	ko04120	Genetic Information Processing
+ko09120	ko04122	Genetic Information Processing
+ko09120	ko03050	Genetic Information Processing
+ko09120	ko03018	Genetic Information Processing
+ko09120	ko03030	Genetic Information Processing
+ko09120	ko03410	Genetic Information Processing
+ko09120	ko03420	Genetic Information Processing
+ko09120	ko03430	Genetic Information Processing
+ko09120	ko03440	Genetic Information Processing
+ko09120	ko03450	Genetic Information Processing
+ko09120	ko03460	Genetic Information Processing
+ko09120	ko03230	Genetic Information Processing
+ko09130	ko02010	Environmental Information Processing
+ko09130	ko02060	Environmental Information Processing
+ko09130	ko03070	Environmental Information Processing
+ko09130	ko02020	Environmental Information Processing
+ko09130	ko04010	Environmental Information Processing
+ko09130	ko04013	Environmental Information Processing
+ko09130	ko04016	Environmental Information Processing
+ko09130	ko04011	Environmental Information Processing
+ko09130	ko04012	Environmental Information Processing
+ko09130	ko04014	Environmental Information Processing
+ko09130	ko04015	Environmental Information Processing
+ko09130	ko04310	Environmental Information Processing
+ko09130	ko04330	Environmental Information Processing
+ko09130	ko04340	Environmental Information Processing
+ko09130	ko04341	Environmental Information Processing
+ko09130	ko04350	Environmental Information Processing
+ko09130	ko04390	Environmental Information Processing
+ko09130	ko04391	Environmental Information Processing
+ko09130	ko04392	Environmental Information Processing
+ko09130	ko04370	Environmental Information Processing
+ko09130	ko04371	Environmental Information Processing
+ko09130	ko04630	Environmental Information Processing
+ko09130	ko04064	Environmental Information Processing
+ko09130	ko04668	Environmental Information Processing
+ko09130	ko04066	Environmental Information Processing
+ko09130	ko04068	Environmental Information Processing
+ko09130	ko04020	Environmental Information Processing
+ko09130	ko04070	Environmental Information Processing
+ko09130	ko04072	Environmental Information Processing
+ko09130	ko04071	Environmental Information Processing
+ko09130	ko04024	Environmental Information Processing
+ko09130	ko04022	Environmental Information Processing
+ko09130	ko04151	Environmental Information Processing
+ko09130	ko04152	Environmental Information Processing
+ko09130	ko04150	Environmental Information Processing
+ko09130	ko04075	Environmental Information Processing
+ko09130	ko04080	Environmental Information Processing
+ko09130	ko04060	Environmental Information Processing
+ko09130	ko04061	Environmental Information Processing
+ko09130	ko04512	Environmental Information Processing
+ko09130	ko04514	Environmental Information Processing
+ko09140	ko04144	Cellular Processes
+ko09140	ko04145	Cellular Processes
+ko09140	ko04142	Cellular Processes
+ko09140	ko04146	Cellular Processes
+ko09140	ko04140	Cellular Processes
+ko09140	ko04138	Cellular Processes
+ko09140	ko04136	Cellular Processes
+ko09140	ko04137	Cellular Processes
+ko09140	ko04139	Cellular Processes
+ko09140	ko04110	Cellular Processes
+ko09140	ko04111	Cellular Processes
+ko09140	ko04112	Cellular Processes
+ko09140	ko04113	Cellular Processes
+ko09140	ko04114	Cellular Processes
+ko09140	ko04210	Cellular Processes
+ko09140	ko04214	Cellular Processes
+ko09140	ko04215	Cellular Processes
+ko09140	ko04216	Cellular Processes
+ko09140	ko04217	Cellular Processes
+ko09140	ko04115	Cellular Processes
+ko09140	ko04218	Cellular Processes
+ko09140	ko04510	Cellular Processes
+ko09140	ko04520	Cellular Processes
+ko09140	ko04530	Cellular Processes
+ko09140	ko04540	Cellular Processes
+ko09140	ko04550	Cellular Processes
+ko09140	ko02024	Cellular Processes
+ko09140	ko05111	Cellular Processes
+ko09140	ko02025	Cellular Processes
+ko09140	ko02026	Cellular Processes
+ko09140	ko02030	Cellular Processes
+ko09140	ko02040	Cellular Processes
+ko09140	ko04810	Cellular Processes
+ko09150	ko04640	Organismal Systems
+ko09150	ko04610	Organismal Systems
+ko09150	ko04611	Organismal Systems
+ko09150	ko04613	Organismal Systems
+ko09150	ko04620	Organismal Systems
+ko09150	ko04624	Organismal Systems
+ko09150	ko04621	Organismal Systems
+ko09150	ko04622	Organismal Systems
+ko09150	ko04623	Organismal Systems
+ko09150	ko04625	Organismal Systems
+ko09150	ko04650	Organismal Systems
+ko09150	ko04612	Organismal Systems
+ko09150	ko04660	Organismal Systems
+ko09150	ko04658	Organismal Systems
+ko09150	ko04659	Organismal Systems
+ko09150	ko04657	Organismal Systems
+ko09150	ko04662	Organismal Systems
+ko09150	ko04664	Organismal Systems
+ko09150	ko04666	Organismal Systems
+ko09150	ko04670	Organismal Systems
+ko09150	ko04672	Organismal Systems
+ko09150	ko04062	Organismal Systems
+ko09150	ko04911	Organismal Systems
+ko09150	ko04910	Organismal Systems
+ko09150	ko04922	Organismal Systems
+ko09150	ko04923	Organismal Systems
+ko09150	ko04920	Organismal Systems
+ko09150	ko03320	Organismal Systems
+ko09150	ko04929	Organismal Systems
+ko09150	ko04912	Organismal Systems
+ko09150	ko04913	Organismal Systems
+ko09150	ko04915	Organismal Systems
+ko09150	ko04914	Organismal Systems
+ko09150	ko04917	Organismal Systems
+ko09150	ko04921	Organismal Systems
+ko09150	ko04926	Organismal Systems
+ko09150	ko04935	Organismal Systems
+ko09150	ko04918	Organismal Systems
+ko09150	ko04919	Organismal Systems
+ko09150	ko04928	Organismal Systems
+ko09150	ko04916	Organismal Systems
+ko09150	ko04924	Organismal Systems
+ko09150	ko04614	Organismal Systems
+ko09150	ko04925	Organismal Systems
+ko09150	ko04927	Organismal Systems
+ko09150	ko04260	Organismal Systems
+ko09150	ko04261	Organismal Systems
+ko09150	ko04270	Organismal Systems
+ko09150	ko04970	Organismal Systems
+ko09150	ko04971	Organismal Systems
+ko09150	ko04972	Organismal Systems
+ko09150	ko04976	Organismal Systems
+ko09150	ko04973	Organismal Systems
+ko09150	ko04974	Organismal Systems
+ko09150	ko04975	Organismal Systems
+ko09150	ko04979	Organismal Systems
+ko09150	ko04977	Organismal Systems
+ko09150	ko04978	Organismal Systems
+ko09150	ko04962	Organismal Systems
+ko09150	ko04960	Organismal Systems
+ko09150	ko04961	Organismal Systems
+ko09150	ko04964	Organismal Systems
+ko09150	ko04966	Organismal Systems
+ko09150	ko04724	Organismal Systems
+ko09150	ko04727	Organismal Systems
+ko09150	ko04725	Organismal Systems
+ko09150	ko04728	Organismal Systems
+ko09150	ko04726	Organismal Systems
+ko09150	ko04720	Organismal Systems
+ko09150	ko04730	Organismal Systems
+ko09150	ko04723	Organismal Systems
+ko09150	ko04721	Organismal Systems
+ko09150	ko04722	Organismal Systems
+ko09150	ko04744	Organismal Systems
+ko09150	ko04745	Organismal Systems
+ko09150	ko04740	Organismal Systems
+ko09150	ko04742	Organismal Systems
+ko09150	ko04750	Organismal Systems
+ko09150	ko04320	Organismal Systems
+ko09150	ko04360	Organismal Systems
+ko09150	ko04361	Organismal Systems
+ko09150	ko04380	Organismal Systems
+ko09150	ko04211	Organismal Systems
+ko09150	ko04212	Organismal Systems
+ko09150	ko04213	Organismal Systems
+ko09150	ko04710	Organismal Systems
+ko09150	ko04713	Organismal Systems
+ko09150	ko04711	Organismal Systems
+ko09150	ko04712	Organismal Systems
+ko09150	ko04714	Organismal Systems
+ko09150	ko04626	Organismal Systems
+ko09160	ko05200	Human Diseases
+ko09160	ko05202	Human Diseases
+ko09160	ko05206	Human Diseases
+ko09160	ko05205	Human Diseases
+ko09160	ko05204	Human Diseases
+ko09160	ko05207	Human Diseases
+ko09160	ko05203	Human Diseases
+ko09160	ko05230	Human Diseases
+ko09160	ko05231	Human Diseases
+ko09160	ko05235	Human Diseases
+ko09160	ko05210	Human Diseases
+ko09160	ko05212	Human Diseases
+ko09160	ko05225	Human Diseases
+ko09160	ko05226	Human Diseases
+ko09160	ko05214	Human Diseases
+ko09160	ko05216	Human Diseases
+ko09160	ko05221	Human Diseases
+ko09160	ko05220	Human Diseases
+ko09160	ko05217	Human Diseases
+ko09160	ko05218	Human Diseases
+ko09160	ko05211	Human Diseases
+ko09160	ko05219	Human Diseases
+ko09160	ko05215	Human Diseases
+ko09160	ko05213	Human Diseases
+ko09160	ko05224	Human Diseases
+ko09160	ko05222	Human Diseases
+ko09160	ko05223	Human Diseases
+ko09160	ko05166	Human Diseases
+ko09160	ko05170	Human Diseases
+ko09160	ko05161	Human Diseases
+ko09160	ko05160	Human Diseases
+ko09160	ko05171	Human Diseases
+ko09160	ko05164	Human Diseases
+ko09160	ko05162	Human Diseases
+ko09160	ko05168	Human Diseases
+ko09160	ko05163	Human Diseases
+ko09160	ko05167	Human Diseases
+ko09160	ko05169	Human Diseases
+ko09160	ko05165	Human Diseases
+ko09160	ko05110	Human Diseases
+ko09160	ko05120	Human Diseases
+ko09160	ko05130	Human Diseases
+ko09160	ko05132	Human Diseases
+ko09160	ko05131	Human Diseases
+ko09160	ko05135	Human Diseases
+ko09160	ko05133	Human Diseases
+ko09160	ko05134	Human Diseases
+ko09160	ko05150	Human Diseases
+ko09160	ko05152	Human Diseases
+ko09160	ko05100	Human Diseases
+ko09160	ko05146	Human Diseases
+ko09160	ko05144	Human Diseases
+ko09160	ko05145	Human Diseases
+ko09160	ko05140	Human Diseases
+ko09160	ko05142	Human Diseases
+ko09160	ko05143	Human Diseases
+ko09160	ko05310	Human Diseases
+ko09160	ko05322	Human Diseases
+ko09160	ko05323	Human Diseases
+ko09160	ko05320	Human Diseases
+ko09160	ko05321	Human Diseases
+ko09160	ko05330	Human Diseases
+ko09160	ko05332	Human Diseases
+ko09160	ko05340	Human Diseases
+ko09160	ko05010	Human Diseases
+ko09160	ko05012	Human Diseases
+ko09160	ko05014	Human Diseases
+ko09160	ko05016	Human Diseases
+ko09160	ko05017	Human Diseases
+ko09160	ko05020	Human Diseases
+ko09160	ko05022	Human Diseases
+ko09160	ko05030	Human Diseases
+ko09160	ko05031	Human Diseases
+ko09160	ko05032	Human Diseases
+ko09160	ko05033	Human Diseases
+ko09160	ko05034	Human Diseases
+ko09160	ko05417	Human Diseases
+ko09160	ko05418	Human Diseases
+ko09160	ko05410	Human Diseases
+ko09160	ko05412	Human Diseases
+ko09160	ko05414	Human Diseases
+ko09160	ko05415	Human Diseases
+ko09160	ko05416	Human Diseases
+ko09160	ko04930	Human Diseases
+ko09160	ko04940	Human Diseases
+ko09160	ko04950	Human Diseases
+ko09160	ko04932	Human Diseases
+ko09160	ko04931	Human Diseases
+ko09160	ko04933	Human Diseases
+ko09160	ko04934	Human Diseases
+ko09160	ko01501	Human Diseases
+ko09160	ko01502	Human Diseases
+ko09160	ko01503	Human Diseases
+ko09160	ko01521	Human Diseases
+ko09160	ko01524	Human Diseases
+ko09160	ko01523	Human Diseases
+ko09160	ko01522	Human Diseases
+ko09180	ko01000	Brite Hierarchies
+ko09180	ko01001	Brite Hierarchies
+ko09180	ko01009	Brite Hierarchies
+ko09180	ko01002	Brite Hierarchies
+ko09180	ko01003	Brite Hierarchies
+ko09180	ko01005	Brite Hierarchies
+ko09180	ko01011	Brite Hierarchies
+ko09180	ko01004	Brite Hierarchies
+ko09180	ko01008	Brite Hierarchies
+ko09180	ko01006	Brite Hierarchies
+ko09180	ko01007	Brite Hierarchies
+ko09180	ko00199	Brite Hierarchies
+ko09180	ko00194	Brite Hierarchies
+ko09180	ko03000	Brite Hierarchies
+ko09180	ko03021	Brite Hierarchies
+ko09180	ko03019	Brite Hierarchies
+ko09180	ko03041	Brite Hierarchies
+ko09180	ko03011	Brite Hierarchies
+ko09180	ko03009	Brite Hierarchies
+ko09180	ko03016	Brite Hierarchies
+ko09180	ko03012	Brite Hierarchies
+ko09180	ko03110	Brite Hierarchies
+ko09180	ko04131	Brite Hierarchies
+ko09180	ko04121	Brite Hierarchies
+ko09180	ko03051	Brite Hierarchies
+ko09180	ko03032	Brite Hierarchies
+ko09180	ko03036	Brite Hierarchies
+ko09180	ko03400	Brite Hierarchies
+ko09180	ko03029	Brite Hierarchies
+ko09180	ko02000	Brite Hierarchies
+ko09180	ko02044	Brite Hierarchies
+ko09180	ko02042	Brite Hierarchies
+ko09180	ko02022	Brite Hierarchies
+ko09180	ko02035	Brite Hierarchies
+ko09180	ko04812	Brite Hierarchies
+ko09180	ko04147	Brite Hierarchies
+ko09180	ko02048	Brite Hierarchies
+ko09180	ko04030	Brite Hierarchies
+ko09180	ko04050	Brite Hierarchies
+ko09180	ko04054	Brite Hierarchies
+ko09180	ko03310	Brite Hierarchies
+ko09180	ko04040	Brite Hierarchies
+ko09180	ko04031	Brite Hierarchies
+ko09180	ko04052	Brite Hierarchies
+ko09180	ko04515	Brite Hierarchies
+ko09180	ko04090	Brite Hierarchies
+ko09180	ko01504	Brite Hierarchies
+ko09180	ko00535	Brite Hierarchies
+ko09180	ko00536	Brite Hierarchies
+ko09180	ko00537	Brite Hierarchies
+ko09180	ko04091	Brite Hierarchies
+ko09180	ko04990	Brite Hierarchies
+ko09180	ko03200	Brite Hierarchies
+ko09180	ko03210	Brite Hierarchies
+ko09180	ko03100	Brite Hierarchies
+ko09190	ko99980	Not Included in Pathway or Brite
+ko09190	ko99981	Not Included in Pathway or Brite
+ko09190	ko99982	Not Included in Pathway or Brite
+ko09190	ko99983	Not Included in Pathway or Brite
+ko09190	ko99984	Not Included in Pathway or Brite
+ko09190	ko99985	Not Included in Pathway or Brite
+ko09190	ko99986	Not Included in Pathway or Brite
+ko09190	ko99987	Not Included in Pathway or Brite
+ko09190	ko99988	Not Included in Pathway or Brite
+ko09190	ko99999	Not Included in Pathway or Brite
+ko09190	ko99973	Not Included in Pathway or Brite
+ko09190	ko99974	Not Included in Pathway or Brite
+ko09190	ko99975	Not Included in Pathway or Brite
+ko09190	ko99976	Not Included in Pathway or Brite
+ko09190	ko99998	Not Included in Pathway or Brite
+ko09190	ko99977	Not Included in Pathway or Brite
+ko09190	ko99978	Not Included in Pathway or Brite
+ko09190	ko99993	Not Included in Pathway or Brite
+ko09190	ko99995	Not Included in Pathway or Brite
+ko09190	ko99992	Not Included in Pathway or Brite
+ko09190	ko99994	Not Included in Pathway or Brite
+ko09190	ko99979	Not Included in Pathway or Brite
+ko09190	ko99996	Not Included in Pathway or Brite
+ko09190	ko99997	Not Included in Pathway or Brite
