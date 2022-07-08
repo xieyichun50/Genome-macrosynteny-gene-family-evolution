@@ -1,5 +1,7 @@
 # Gene family evolution and genome structure analysis
-1. Prepare files for [orthofinder](https://github.com/davidemms/OrthoFinder) analysis.
-2. Synteny plot using orthofinder results.
-3. Summarise gene family gain and loss results.
-4. Functional annotation of gene family gain/loss/duplication on the phylogenetic tree.
+# Script for downstream analysis
+- `1ortholog_prep/` - Data formatting scripts
+- `2synteny_plot/` - Macro-synteny and oxford plots 
+- `3gene_family_summary/` - Gene family evolution summary
+- `4function_anno2tree/` - Functional annotation and enrichment analysis
+
