@@ -1,5 +1,5 @@
 ##usage
-#Rscript /jelly_data/yichun/scripts/5formatenrich/03ancestralstate.R -c base_count.tab -d base_change.tab -g Orthogroups.GeneCount.tsv -n Species_tree_gain_loss_dup.txt
+#Rscript /jelly_data/yichun/scripts/5formatenrich/03ancestralstate.R -c Base_count.tab -d Base_change.tab -g Orthogroups.GeneCount.tsv -n Species_tree_gain_loss_dup.txt
 #Output the following
 ##pseudo.species.txt --pseudogenome of each node/tip of tree
 ##gain.species.txt --gained genes of each node/tip of tree
@@ -37,11 +37,11 @@ opt = parse_args(parser)
 
 ##Manually add files
 {
-  setwd("D:/centipede/cafe")
-  opt$count.table="base_count.tab"
-  opt$change.table="base_change.tab"
-  opt$genome.table="Orthogroups.GeneCount.tsv"
-  opt$speciesorder="Species_tree_gain_loss_dup.txt"
+  #setwd("D:/centipede/cafe")
+  #opt$count.table="Base_count.tab"
+  #opt$change.table="Base_change.tab"
+  #opt$genome.table="Orthogroups.GeneCount.tsv"
+  #opt$speciesorder="Species_tree_gain_loss_dup.txt"
 }
 
 #read in species label
@@ -83,20 +83,20 @@ speciesorder<-read.delim(opt$speciesorder, header = TRUE, stringsAsFactors = FAL
 }
 
 ##Test
-##Are loss number < parent node gene number
+##Are loss number < parent node gene number, should be all 0
 {
   for (j in 1:ncol(count.table)){
-    cat(names(count.table)[j])
+    cat(paste0(names(count.table)[j], " = "))
     parentnode<-subset(speciesorder, label == names(count.table)[j])
     parentspecies<-speciesorder$label[which(speciesorder$node==parentnode$parent)]
     testcount<-count.table[,which(names(count.table)==parentspecies)]+change.table[,which(names(change.table)==names(count.table)[j])]
-    cat(length(which(testcount<0)==TRUE))
+    cat(length(which(testcount<0)==TRUE,"\n"))
   }
 }
-##Are gain number < current node gene number
+##Are gain number < current node gene number, should be all 0
 {
   for (j in 1:ncol(count.table)){
-    cat(names(count.table)[j],"\n")
+    cat(paste0(names(count.table)[j], " = "))
     testcount<-count.table[,j]-change.table[,which(names(change.table)==names(count.table)[j])]
     cat(length(which(testcount<0)==TRUE),"\n")
   }
@@ -118,6 +118,7 @@ speciesorder<-read.delim(opt$speciesorder, header = TRUE, stringsAsFactors = FAL
 ##Main pool ##No need
 {
   for (i in 1:nrow(count.table)) {
+    cat(paste0("Generating pseudogenome of all", "\n"))
     rowmax<-max(count.table[i,1:ncol(count.table)])
     OG.sub<-matrix(paste(row.names(count.table)[i],".",c(1:rowmax), sep = ""))
     OG.sub<-as.data.frame(OG.sub)
@@ -134,6 +135,7 @@ speciesorder<-read.delim(opt$speciesorder, header = TRUE, stringsAsFactors = FAL
 ##Genome pools
 {
   for (j in 1:ncol(count.table)){
+    cat(paste0("Generating pseudogenome of ", names(count.table)[j], "\n"))
     pseudo.species.genes<-pseudogenome
     count.table.sub<-data.frame(count.table[,j], row.names = row.names(count.table))
     speciesname=names(count.table)[j]
@@ -158,12 +160,13 @@ speciesorder<-read.delim(opt$speciesorder, header = TRUE, stringsAsFactors = FAL
 ##Gain loss pool
 {
   for (j in 1:ncol(change.table)){
+    cat(paste0("Generating gain and loss lists of ", names(count.table)[j], "\n"))
     gain.species.genes<-pseudogenome
     loss.species.genes<-pseudogenome
     change.table.sub<-data.frame(change.table[,j], row.names = row.names(change.table))
     speciesname=names(change.table)[j]
     names(change.table.sub)[1]="Orthogroup"
-    change.table.sub<-subset(change.table.sub, Orthogroup > 0)
+    change.table.sub<-subset(change.table.sub, Orthogroup != 0)
     for (i in 1:nrow(change.table.sub)) {
       n<-change.table.sub[i,1]
       OG.sub<-matrix(paste(row.names(change.table.sub)[i],".",c(1:abs(n)), sep = ""))
@@ -192,6 +195,7 @@ speciesorder<-read.delim(opt$speciesorder, header = TRUE, stringsAsFactors = FAL
 ##Species pool
 {
   for (j in 1:(ncol(genome.table)-1)){
+    cat(paste0("Generating species genelist and species-specific genelist of ", names(count.table)[j], "\n"))
     genome.species.genes<-pseudogenome
     specific.species.genes<-pseudogenome
     genome.table.sub<-data.frame(genome.table[,c(j, ncol(genome.table))], row.names = row.names(genome.table))
@@ -223,5 +227,4 @@ speciesorder<-read.delim(opt$speciesorder, header = TRUE, stringsAsFactors = FAL
     rm(genome.species.genes, specific.species.genes, genome.table.sub, speciesname, n, OG.sub)
   }
 }
-
 
