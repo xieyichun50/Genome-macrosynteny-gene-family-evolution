@@ -1,0 +1,2 @@
+## For example
+emapper.py  --target_orthologs all --go_evidence non-electronic -m diamond --pident 40 --seed_ortholog_evalue 0.001 --seed_ortholog_score 60 --query_cover 20 --subject_cover 20 --override -i Anaulaciulus_tonginus.fa -o Anaulaciulus_tonginus.fa.eggnog --output_dir /store/pacbio/yichun/myriapod/longest_prot_without_mite/eggnog --temp_dir /store/pacbio/yichun/myriapod/longest_prot_without_mite/eggnog_tmp --database none --cpu 238 --target_taxa 6656
